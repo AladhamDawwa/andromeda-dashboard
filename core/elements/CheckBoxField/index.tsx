@@ -6,7 +6,7 @@ type TCheckBoxFieldProps = {
   name: string;
 } & TCheckboxProps;
 
-const index = ({ name, ...props }: TCheckBoxFieldProps) => {
+const CheckboxField = ({ name, ...props }: TCheckBoxFieldProps) => {
   return (
     <Field name={name}>
       {({ field, form }: FieldProps) => {
@@ -22,4 +22,4 @@ const index = ({ name, ...props }: TCheckBoxFieldProps) => {
   );
 };
 
-export default index;
+export default CheckboxField;
