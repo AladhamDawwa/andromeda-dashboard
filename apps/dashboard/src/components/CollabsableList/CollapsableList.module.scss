@@ -1,0 +1,26 @@
+.titleRow {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  padding: var(--spacing-large);
+}
+
+.titleText {
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: height 0.2s ease-in-out;
+  margin-top: var(--spacing-small);
+}
+
+.itemsList.hidden {
+  height: 0;
+}

@@ -1,0 +1,37 @@
+.item {
+  display: flex;
+  align-items: center;
+
+  gap: var(--spacing-large);
+
+  padding-left: var(--spacing-large);
+  padding-right: var(--spacing-large);
+  height: 50px;
+  transition: all 0.25s ease-in-out;
+
+  .labelText {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  &:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+}
+
+.activeItem {
+  color: var(--color-white);
+  background-color: var(--primary-color);
+  .labelText {
+    font-weight: 600;
+  }
+  &:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}

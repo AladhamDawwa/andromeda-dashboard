@@ -1,0 +1,80 @@
+.trackingContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  position: relative;
+}
+
+/* Progress Bar */
+.progressBar {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  width: 70%;
+  height: 4px;
+  background: #ddd;
+  z-index: 0;
+  border-radius: 2px;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--primary-color);
+  border-radius: 2px;
+  transition: width 0.5s ease-in-out;
+}
+
+.step {
+  text-align: center;
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+/* Icon styling */
+.icon {
+  background: gray;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.active {
+  background: var(--primary-color); /* Gold color for active step */
+  color: wite;
+  animation: pop 0.3s ease-in-out;
+}
+
+/* Label text */
+.label {
+  margin-top: var(--spacing-small);
+  font-size: 14px;
+  color: grey;
+  transition: color 0.3s ease-in-out;
+}
+
+.activeText {
+  color: initial;
+  font-weight: bold;
+}
+
+/* Pop-in animation for active steps */
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

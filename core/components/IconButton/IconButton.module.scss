@@ -1,0 +1,14 @@
+.iconButton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}

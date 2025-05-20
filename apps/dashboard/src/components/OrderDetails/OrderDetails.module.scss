@@ -1,0 +1,91 @@
+@use "@andromeda/core/styles/themes" as *;
+.OrderDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 100%;
+  height: 100%;
+  gap: 16px;
+  position: relative;
+  .OrderHeaderSection {
+    position: sticky;
+    top: 0;
+    flex-shrink: 0;
+    h2 {
+      margin-bottom: 5px;
+      font-size: 1.3em;
+    }
+    .OrderHeaderDetails {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin: 0;
+      .TableNumber {
+        background-color: var(--primary-color-faded);
+        color: var(--color-white);
+        padding: 5px 10px;
+        font-weight: bold;
+      }
+      .Seperator {
+        color: var(--card-separator-color);
+      }
+      .TimeAgo {
+        color: var(--color-gray);
+      }
+      .OrderStatus {
+        font-size: 1rem;
+        margin-top: 3px;
+      }
+    }
+  }
+
+  .OrderDetailsSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow-y: auto;
+    .OrderDescription {
+      padding: 5px 10px;
+      border: 1px solid var(--card-separator-color);
+      border-radius: 8px;
+      h3 {
+        font-size: 16px;
+        font-weight: 550;
+        margin-bottom: 16px;
+      }
+      .item {
+        display: flex;
+        justify-content: space-between;
+        line-height: 25px;
+      }
+      hr {
+        border-bottom: 0;
+        margin: 5px 0;
+      }
+      .itemComment {
+        color: var(--order-details-text);
+        font-size: 13px;
+      }
+    }
+  }
+
+  .OrderFooterSection {
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    flex-shrink: 0;
+  }
+}
+.NoneSelected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.DetailsLoaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

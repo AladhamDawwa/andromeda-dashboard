@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  gap: 20px;
+  height: 100%;
+  .ordersContainer {
+    width: 70%;
+    .ordersSection {
+      display: flex;
+      height: 100%;
+      .grid {
+        display: flex;
+        justify-content: center;
+        padding: var(--spacing-large);
+        gap: var(--spacing-small);
+        flex: 1;
+      }
+    }
+  }
+  .orderDetailsContainer {
+    width: 30%;
+    .ordersDetailsSection {
+      height: 100%;
+    }
+  }
+
+  h1 {
+    margin: 0px;
+    text-align: center;
+    background-color: #e1ebf4;
+    width: 100%;
+    padding: 10px 0;
+  }
+  h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}

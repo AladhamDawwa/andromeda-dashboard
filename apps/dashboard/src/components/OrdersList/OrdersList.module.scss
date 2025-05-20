@@ -1,0 +1,22 @@
+.gridItem {
+  flex: 1;
+  .ordersListContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    h1 {
+      flex-shrink: 0;
+    }
+    .ordersList {
+      display: flex;
+      flex-direction: column;
+      padding: var(--spacing-large) var(--spacing-medium);
+      gap: var(--spacing-large);
+      background-color: aliceblue;
+      flex: 1;
+      overflow-y: auto;
+    }
+  }
+}

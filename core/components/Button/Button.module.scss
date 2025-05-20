@@ -1,0 +1,35 @@
+.button {
+  min-height: 46px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: 450;
+  padding: 10px 16px;
+  transition: all 0.2s ease-in-out;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.primary {
+  background: var(--primary-color);
+  color: white;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+.outline {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+
+  &:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+}

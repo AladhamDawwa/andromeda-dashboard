@@ -1,0 +1,77 @@
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-medium);
+  padding: var(--spacing-medium) var(--spacing-large);
+}
+.cardDetails {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardInnerDetails {
+  display: flex;
+  flex-direction: column;
+  h3 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  div {
+    display: flex;
+    gap: var(--spacing-small);
+    align-items: center;
+  }
+}
+.cardBottomSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.priceText {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.commentText {
+  margin-block: 4px;
+  font-size: 14px;
+  color: var(--color-gray);
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.imageAndQuantity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #020202;
+  color: white;
+  border-radius: 20%;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  transform: translate(30%, -30%);
+}
+
+.image {
+  border-radius: var(--spacing-small);
+  object-fit: cover;
+}

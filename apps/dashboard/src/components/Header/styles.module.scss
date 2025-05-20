@@ -1,0 +1,15 @@
+.headerContainer {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+
+  h1 {
+    font-size: 1.25rem;
+  }
+  .logo {
+    object-fit: cover;
+    height: 24px;
+  }
+}

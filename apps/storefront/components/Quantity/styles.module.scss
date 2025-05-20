@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  width: max-content;
+  overflow: hidden;
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: 3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.button {
+  all: unset;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+
+  &:disabled svg {
+    color: var(--color-primary-hover);
+  }
+}
+
+.button:disabled {
+  color: var(--primary-color);
+  cursor: not-allowed;
+}
+
+.deleteButton {
+  margin-inline-end: 0;
+  border: 1px solid var(--border-color);
+  border-radius: 3rem;
+}
+
+.single .deleteButton {
+  border: none;
+  z-index: 1;
+  margin-inline-end: -2.5rem;
+}
+
+.single.buttonGroup {
+  gap: 0;
+}
+
+.input {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.input[type="number"] {
+  appearance: textfield;
+}

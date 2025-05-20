@@ -1,0 +1,22 @@
+.loader {
+  border-radius: 50%;
+  background-color: rgb(223 189 189 / 50%);
+  animation: shrink 1.5s infinite ease-in-out;
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

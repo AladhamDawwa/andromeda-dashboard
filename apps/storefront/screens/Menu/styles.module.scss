@@ -1,0 +1,48 @@
+.stickyHeader {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  padding: 10px 10px 0 10px;
+}
+.categoryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-block: 20px;
+}
+.footer {
+  color: #ccc;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-small);
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  bottom: 0;
+}
+
+.basketButton {
+  border-radius: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-small);
+  }
+}
+
+.basketItems {
+  backdrop-filter: blur(5px);
+  background-color: rgb(255 255 255 / 50%);
+  padding: 0.25rem 0.5rem;
+  border-radius: 50px;
+}

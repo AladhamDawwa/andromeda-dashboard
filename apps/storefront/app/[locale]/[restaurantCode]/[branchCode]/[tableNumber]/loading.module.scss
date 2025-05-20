@@ -1,0 +1,20 @@
+.container {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes title to center and loader to bottom */
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  padding: 20px;
+
+  .image {
+    flex-grow: 1; /* Pushes loader down */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div {
+    margin-bottom: 20px; /* Optional: Adjust spacing */
+  }
+}

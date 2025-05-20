@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+:root {
+  // old colors (will be removed)
+  --primary-color: #d90368;
+  --surface-light: #f2f2f2;
+  --primary-color-faded: #d90368;
+  --card-title-color: #202d48;
+  --card-details-color: #718ebf;
+  --card-separator-color: #d1d5db;
+  --color-white: #ffffff;
+  --color-gray: #808080;
+  --order-details-text: #6a6565;
+  --color-black: #000000;
+  --font-primary: "Montserrat", sans-serif;
+  --font-primary-ar: "Tajawal", sans-serif;
+
+  /* Base Primary Color */
+  --color-primary: #d90368;
+
+  /* Derived Colors */
+  --color-primary-dark: color-mix(in srgb, var(--color-primary) 80%, black 20%);
+  --color-primary-light: color-mix(
+    in srgb,
+    var(--color-primary) 90%,
+    white 10%
+  );
+  --color-primary-hover: color-mix(
+    in srgb,
+    var(--color-primary) 15%,
+    white 85%
+  );
+  --color-primary-transparent: rgba(217, 3, 104, 0.1);
+
+  /* Neutral Colors */
+  --color-secondary: #333;
+  --color-secondary-dark: color-mix(
+    in srgb,
+    var(--color-secondary) 90%,
+    black 10%
+  );
+  --color-light: #f5f5f5;
+  --color-dark: #222;
+  --border-color: #eee;
+
+  /* UI Effects */
+  --color-hover: var(--color-primary-hover);
+  --color-shadow: rgba(217, 3, 104, 0.2);
+
+  /* Global Spacing */
+  --spacing-small: 8px;
+  --spacing-medium: 14px;
+  --spacing-large: 18px;
+
+  --spacing-5: 16px;
+  --spacing-6: 24px;
+
+  /* Border Radius */
+  --border-radius: 8px;
+
+  /* Breakpoints */
+  --breakpoint-mobile: 768px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body[dir="ltr"] {
+  font-family: var(--font-primary);
+}
+
+body[dir="rtl"] {
+  font-family: var(--font-primary-ar);
+}

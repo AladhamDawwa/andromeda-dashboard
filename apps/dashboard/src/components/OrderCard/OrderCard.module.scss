@@ -1,0 +1,49 @@
+@use "@andromeda/core/styles/themes" as *;
+
+.orderCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-small);
+  padding: var(--spacing-small);
+  border: 1px solid var(--card-separator-color);
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--card-title-color);
+    transition: color 0.3s ease;
+  }
+
+  .details {
+    font-size: 0.85rem;
+    color: var(--card-details-color);
+    display: flex;
+    gap: 5px;
+    transition: color 0.3s ease;
+  }
+
+  .separator {
+    color: var(--card-separator-color);
+  }
+
+  @media screen and (max-width: 1000px) {
+    .details {
+      flex-direction: column;
+    }
+
+    .separator {
+      display: none;
+    }
+  }
+
+  &:hover,
+  &.selected {
+    background: var(--primary-color);
+    .title,
+    .details {
+      color: var(--color-white);
+    }
+  }
+}

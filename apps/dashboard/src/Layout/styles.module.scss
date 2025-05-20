@@ -1,0 +1,45 @@
+:global(body) {
+  --header-height: 64px;
+  --side-bar-width: 256px;
+  background-color: var(--surface-light);
+}
+
+:global(#root) {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  background-color: white;
+  width: 100%;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  padding-inline: var(--spacing-5);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 2;
+}
+
+.layout {
+  margin-top: var(--header-height);
+  flex-grow: 1;
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: var(--side-bar-width);
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  padding-block: var(--spacing-5);
+  border-inline-end: 1px solid var(--border-color);
+}
+
+.mainContent {
+  height: 100%;
+  width: calc(100% - var(--side-bar-width));
+  margin-inline-start: var(--side-bar-width);
+  padding: var(--spacing-6) var(--spacing-5);
+}
