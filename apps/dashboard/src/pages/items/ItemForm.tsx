@@ -6,7 +6,7 @@ import { Button } from "@andromeda/core/components";
 import InputField from "@andromeda/core/elements/InputField";
 import SelectField from "@andromeda/core/elements/SelectField";
 import TextareaField from "@andromeda/core/elements/TextareaField";
-// import CheckboxField from "@andromeda/core/elements/CheckboxField";
+import CheckboxField from "@andromeda/core/elements/CheckboxField";
 import ImageUploaderField from "@andromeda/core/elements/ImageUploaderField";
 import { useCategoriesAPI } from "@/services";
 import { TItem } from "@andromeda/core/types";
@@ -86,7 +86,7 @@ const ItemActionsForm = ({
           placeholder={t("categorySelectPlaceholder")}
           options={categories || []}
         />
-        {/* <CheckboxField name="enableComments" label={t("enableComments")} /> */}
+        <CheckboxField name="enableComments" label={t("enableComments")} />
         <ImageUploaderField name="image" label={t("uploadItemImage")} />
         <Button type="submit" style={{ marginTop: "1rem" }}>
           {t("save")}
