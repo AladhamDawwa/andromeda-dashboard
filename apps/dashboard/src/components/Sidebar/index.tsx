@@ -14,7 +14,7 @@ export const Sidebar = () => {
 
   return (
     <>
-      <CollabsableList title={t("orders")} itemsList={ordersItemList} />
+      <CollabsableList itemsList={ordersItemList} />
     </>
   );
 };

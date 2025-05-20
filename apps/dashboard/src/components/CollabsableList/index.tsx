@@ -1,6 +1,4 @@
 import styles from "./CollapsableList.module.scss";
-import { useState } from "react";
-import { LuChevronDown, LuChevronUp } from "react-icons/lu";
 import CollapsapleListItem, {
   CollapsableListItemProps,
 } from "../CollabsableListItem";
@@ -8,13 +6,12 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import clsx from "clsx";
 
 type CollapsableListProps = {
-  title: string;
   itemsList: CollapsableListItemProps[];
 };
 
 export const CollapsableList = (props: CollapsableListProps) => {
-  const { title = "", itemsList = [] } = props || {};
-  const [isOpen, setIsOpen] = useState(true);
+  const { itemsList = [] } = props || {};
+  const isOpen = true;
 
   const location = useLocation();
   const navigate = useNavigate();

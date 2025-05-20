@@ -6,7 +6,7 @@ import {
   ImageUploadPayload,
   itemsAPI,
 } from "@/services/api/items";
-import { TItem } from "@/types";
+import { TItem } from "@andromeda/core/types";
 
 export const useItemsAPI = () => {
   const queryClient = useQueryClient();

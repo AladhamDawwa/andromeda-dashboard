@@ -1,5 +1,5 @@
+import { TItem } from "@andromeda/core/types";
 import { AxiosInstance } from "axios";
-import { TItem } from "../../../types/item";
 
 const baseURL = "/api/menu";
 
